@@ -1,6 +1,6 @@
 export async function POST(req){
 
-  const body = req.json()
+  const body = await req.json()
   console.log("notification: ", body)
 
   return new Response(body)
